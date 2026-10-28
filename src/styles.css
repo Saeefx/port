@@ -59,7 +59,7 @@ h1 em, h2 em { font-style: normal; color: var(--acid-deep); }
 .orbit-two { width: 380px; height: 250px; transform: rotate(42deg); }
 .orbit-three { width: 270px; height: 400px; transform: rotate(68deg); }
 .hero-monogram { position: relative; z-index: 1; font-family: var(--display); font-size: clamp(7rem, 16vw, 12rem); line-height: .8; font-weight: 700; letter-spacing: -.16em; transform: rotate(-8deg); }
-.hero-monogram span { font-size: .74em; color: var(--paper); -webkit-text-stroke: 2px var(--ink); text-stroke: 2px var(--ink); }
+.hero-monogram span { font-size: .74em; color: var(--paper); -webkit-text-stroke: 2px var(--ink); }
 .hero-cross { width: 13px; height: 13px; position: absolute; z-index: 2; }
 .hero-cross::before, .hero-cross::after { content: ''; position: absolute; background: var(--ink); }
 .hero-cross::before { width: 1px; height: 100%; left: 6px; } .hero-cross::after { height: 1px; width: 100%; top: 6px; }
@@ -102,6 +102,9 @@ h2 { font-size: clamp(3rem, 5.3vw, 5rem); line-height: .96; font-weight: 600; ma
 .ugc-card { border: 1px solid var(--line); padding: 11px 11px 20px; transition: transform .25s ease, box-shadow .25s ease; background: rgba(255,255,255,.14); }
 .ugc-card:hover { transform: translateY(-6px); box-shadow: 7px 7px 0 var(--ink); }
 .ugc-card:nth-child(4) { grid-column: span 2; }
+.ugc-video-wrap { position: relative; aspect-ratio: 9 / 16; overflow: hidden; background: var(--ink); }
+.ugc-video-wrap video { width: 100%; height: 100%; display: block; object-fit: cover; }
+.video-badge { position: absolute; top: 12px; left: 12px; z-index: 1; color: var(--acid); border: 1px solid var(--acid); background: rgba(16,17,15,.82); padding: 7px 8px; font-family: var(--mono); text-transform: uppercase; letter-spacing: .06em; font-size: .55rem; pointer-events: none; }
 .ugc-card:nth-child(4) .ugc-visual { aspect-ratio: 2.02 / 1; }
 .ugc-visual { position: relative; aspect-ratio: 1.58 / 1; overflow: hidden; background: var(--ink); color: var(--paper); display: flex; flex-direction: column; justify-content: space-between; padding: 13px; }
 .theme-lime .ugc-visual { background: var(--acid); color: var(--ink); } .theme-blue .ugc-visual { background: var(--blue); color: var(--ink); } .theme-violet .ugc-visual { background: var(--violet); color: var(--ink); } .theme-orange .ugc-visual { background: var(--orange); color: var(--ink); } .theme-pink .ugc-visual { background: var(--pink); color: var(--ink); } .theme-teal .ugc-visual { background: var(--teal); color: var(--ink); } .theme-red .ugc-visual { background: var(--red); color: var(--ink); }

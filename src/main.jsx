@@ -20,7 +20,7 @@ const proof = [
 ];
 
 const ugcWork = [
-  { id: '01', title: 'The 3-second switch', category: 'Fintech / UGC', format: 'Talking head · 30 sec', hook: '“I stopped checking three apps just to know where my money went.”', brief: 'A direct-to-camera creator story for a modern finance app that makes the pain point instantly recognizable.', deliverables: ['1 hero script', '3 hook variations', '9:16 edit direction'], theme: 'lime', visual: 'SCREEN / SAVING TIME' },
+  { id: '01', title: 'The 3-second switch', category: 'Fintech / UGC', format: 'Motion spec · 5 sec', hook: '“I stopped checking three apps just to know where my money went.”', brief: 'A direct-to-camera creator story for a modern finance app that makes the pain point instantly recognizable.', deliverables: ['Featured motion sample', '3 hook variations', '9:16 edit direction'], theme: 'lime', visual: 'SCREEN / SAVING TIME', video: '/saeef-ugc-feature.mp4' },
   { id: '02', title: 'Ship it in public', category: 'Developer tool', format: 'Screen capture · 25 sec', hook: '“This is the part of shipping that usually costs me a whole afternoon.”', brief: 'A fast product walkthrough that turns a technical workflow into a satisfying before/after moment.', deliverables: ['Product demo arc', 'Motion callouts', 'Caption system'], theme: 'blue', visual: 'BUILD / FASTER' },
   { id: '03', title: 'Your community is a product', category: 'Web3 / Community', format: 'Founder POV · 35 sec', hook: '“The best communities don’t feel like an audience.”', brief: 'A founder-led narrative for an ecosystem team that wants to show culture, not just list features.', deliverables: ['Founder talking points', 'B-roll map', 'CTA variations'], theme: 'violet', visual: 'PEOPLE / PROTOCOL' },
   { id: '04', title: 'The AI co-pilot test', category: 'AI / Productivity', format: 'Split-screen · 20 sec', hook: '“I gave the boring part of my work to an AI co-pilot.”', brief: 'A playful side-by-side test built to make an abstract AI feature feel concrete and useful.', deliverables: ['Split-screen storyboard', 'On-screen prompts', 'Sound cue guide'], theme: 'orange', visual: 'PROMPT / OUTPUT' },
@@ -128,12 +128,12 @@ function App() {
           <div className="ugc-grid">
             {ugcWork.map((item) => (
               <article className={`ugc-card theme-${item.theme}`} key={item.id}>
-                <div className="ugc-visual">
+                {item.video ? <div className="ugc-video-wrap"><video src={item.video} controls muted loop playsInline preload="metadata" aria-label={`${item.title} featured motion sample`} /><span className="video-badge">FEATURED MOTION / PLAY</span></div> : <div className="ugc-visual">
                   <div className="visual-noise" />
                   <div className="visual-top"><span>SAEEf / SPEC 0{item.id}</span><span>9:16</span></div>
                   <div className="visual-center"><span className="visual-pill">{item.visual}</span><strong>{item.id}</strong></div>
                   <div className="visual-bottom"><span>PLAY / PAUSE</span><span>00:{item.id === '01' ? '30' : item.id === '05' ? '15' : '25'}</span></div>
-                </div>
+                </div>}
                 <div className="ugc-meta"><span>{item.category}</span><span>{item.format}</span></div>
                 <h3>{item.title}</h3>
                 <p className="ugc-hook">{item.hook}</p>
