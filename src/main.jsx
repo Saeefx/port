@@ -27,6 +27,11 @@ const ugcWork = [
   { id: '05', title: 'Texture that travels', category: 'Beauty / Lifestyle', format: 'POV hands · 15 sec', hook: '“The texture test is the only review I trust.”', brief: 'A sensory, close-up product moment that uses tactile visual language to earn the pause.', deliverables: ['Shot list', 'Texture language', 'Creator brief'], theme: 'pink', visual: 'TOUCH / REMEMBER' },
   { id: '06', title: 'One tab, seven moves', category: 'SaaS / Workflow', format: 'Desk POV · 25 sec', hook: '“Watch me turn seven tabs into one clean workflow.”', brief: 'A desk-setup ad that uses pace, labels, and movement to make a workflow product feel lighter.', deliverables: ['Beat sheet', 'Screen overlays', 'End-card copy'], theme: 'teal', visual: 'FOCUS / FLOW' },
   { id: '07', title: 'Culture, with receipts', category: 'Fashion / Culture', format: 'Street vox pop · 30 sec', hook: '“I wore the idea before I wore the product.”', brief: 'A culture-first street format that blends a product reveal with a point of view people want to repeat.', deliverables: ['Interview prompts', 'Street cutdown', 'Comment bait'], theme: 'red', visual: 'SIGNAL / STYLE' },
+  { id: '08', title: 'LumaPay — money, minus the maze', category: 'LumaPay · Fintech spec', format: 'UGC direction · 10 sec', hook: '“I used to open four apps. Now I open one.”', brief: 'A fictional fintech brand direction that turns financial admin into a fast, satisfying before-and-after.', deliverables: ['10 sec hero edit ready', 'Creator script', 'CTA variants'], theme: 'lime', visual: 'ONE / DASHBOARD' },
+  { id: '09', title: 'Nuru Skin — the texture test', category: 'Nuru Skin · Beauty spec', format: 'Creator POV · 20 sec', hook: '“If the texture is wrong, I know in one second.”', brief: 'A fictional beauty brand direction built around tactile close-ups and a creator’s honest micro-reaction.', deliverables: ['Macro shot list', 'Reaction beats', 'Comment prompt'], theme: 'pink', visual: 'FEEL / FIRST' },
+  { id: '10', title: 'RelayOS — one workspace', category: 'RelayOS · SaaS spec', format: 'Desk POV · 20 sec', hook: '“The workflow got lighter before the deadline got closer.”', brief: 'A fictional SaaS brand direction that makes an abstract productivity benefit visible through motion and labels.', deliverables: ['Screen story', 'Overlay kit', 'Founder cutdown'], theme: 'blue', visual: 'FOCUS / FLOW' },
+  { id: '11', title: 'Orbit Protocol — learn by doing', category: 'Orbit Protocol · Web3 spec', format: 'Founder POV · 25 sec', hook: '“You don’t need a glossary to start here.”', brief: 'A fictional Web3 brand direction that makes a technical ecosystem feel welcoming, practical, and human.', deliverables: ['Founder script', 'Community proof', 'Trust-first CTA'], theme: 'violet', visual: 'JOIN / BUILD' },
+  { id: '12', title: 'Kairo — wear the signal', category: 'Kairo · Fashion spec', format: 'Street vox pop · 15 sec', hook: '“People asked where I got it before they asked what it was.”', brief: 'A fictional fashion brand direction using street energy, visual texture, and a repeatable point of view.', deliverables: ['Street prompt', '3 cutdowns', 'Comment bait'], theme: 'red', visual: 'SIGNAL / STYLE' },
 ];
 
 function ArrowUpRight() {
@@ -142,7 +147,7 @@ function App() {
               </article>
             ))}
           </div>
-          <div className="spec-note"><span className="spec-note-mark">i</span><span>These seven examples are concept/spec directions created to show creative range. Swap them for live client work as your case studies grow.</span></div>
+          <div className="spec-note"><span className="spec-note-mark">i</span><span>These examples are concept/spec directions created to show creative range. The five named brands above are fictional portfolio brands, not client claims. Swap them for live client work as your case studies grow.</span></div>
         </section>
 
         <section className="about-section" id="about">
