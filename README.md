@@ -18,8 +18,8 @@ Most portfolio copy lives in `src/main.jsx` near the top of the file:
 - `ugcWork` controls the seven UGC concept boards.
 - `xUrl` and `email` control the contact links.
 
-The first UGC board uses `public/saeef-ugc-feature.mp4` as the featured motion sample. Replace that file and update the `video` path in `src/main.jsx` when a live client asset is ready. The five industry cards use fictional spec brands (LumaPay, Nuru Skin, RelayOS, Orbit Protocol, and Kairo) and are intentionally labeled as directions until real client footage is available.
+The first UGC board uses `public/saeef-ugc-feature.mp4` as the only featured motion sample. Replace that file and update the `video` path in `src/main.jsx` when a live client asset is ready. The five industry cards use fictional spec brands (LumaPay, Nuru Skin, RelayOS, Orbit Protocol, and Kairo) and are intentionally labeled as directions until real client footage is available.
 
-The five brand cards also include playable, locally rendered 10-second MP4 motion studies. Their source generator is `scripts/generate_spec_videos.py`; run it from the project root with `python3 scripts/generate_spec_videos.py` to regenerate them.
+The UGC philosophy is hook fast, show one human or tactile action, make the payoff visible, and land with a clean editorial end card.
 
 Visual styling lives in `src/styles.css`.

@@ -98,6 +98,10 @@ h2 { font-size: clamp(3rem, 5.3vw, 5rem); line-height: .96; font-weight: 600; ma
 .proof-card p { color: #aeb2a7; font-size: .83rem; line-height: 1.55; max-width: 230px; margin: 0; }
 .card-line { margin-top: auto; width: 100%; height: 2px; background: linear-gradient(90deg, var(--acid), transparent); }
 .ugc-section { padding: 128px 0 126px; }
+.ugc-principles { display: grid; grid-template-columns: 170px 1fr; gap: 28px; align-items: start; padding: 17px 0 19px; margin: -17px 0 42px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.principles-mark { color: var(--acid-deep); font-family: var(--mono); text-transform: uppercase; letter-spacing: .08em; font-size: .63rem; }
+.ugc-principles p { max-width: 680px; color: var(--muted); line-height: 1.55; font-size: .82rem; margin: 0; }
+.ugc-principles strong { color: var(--ink); font-family: var(--display); letter-spacing: -.03em; font-size: .95rem; }
 .ugc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 19px; }
 .ugc-card { border: 1px solid var(--line); padding: 11px 11px 20px; transition: transform .25s ease, box-shadow .25s ease; background: rgba(255,255,255,.14); }
 .ugc-card:hover { transform: translateY(-6px); box-shadow: 7px 7px 0 var(--ink); }
@@ -162,6 +166,7 @@ h2 { font-size: clamp(3rem, 5.3vw, 5rem); line-height: .96; font-weight: 600; ma
   .hero-intro { font-size: .95rem; } .hero-art { min-height: 240px; } .hero-monogram { font-size: 7rem; } .hero-art-note { font-size: .5rem; } .orbit-one { width: 300px; height: 110px; } .orbit-two { width: 230px; height: 165px; } .orbit-three { height: 245px; width: 180px; }
   .signal-inner { gap: 26px; justify-content: flex-start; min-width: max-content; animation: ticker 20s linear infinite; } .signal-strip { padding-left: 19px; } @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-34%); } }
   .work-section, .ugc-section { padding: 83px 0; } .proof-section, .about-section { padding: 83px 0; } .section-label { margin-bottom: 32px; } .section-heading-row { grid-template-columns: 1fr; gap: 24px; margin-bottom: 41px; } h2 { font-size: clamp(2.8rem, 13vw, 4.4rem); }
+  .ugc-principles { grid-template-columns: 1fr; gap: 10px; margin-top: -10px; }
   .service-row { grid-template-columns: 33px 1fr 17px; gap: 10px; padding: 22px 0; } .service-row p { grid-column: 2 / 4; grid-row: 2; max-width: none; } .tag-list { grid-column: 2 / 4; grid-row: 3; } .service-row > .arrow-icon { grid-column: 3; grid-row: 1; }
   .proof-grid, .ugc-grid { grid-template-columns: 1fr; gap: 13px; } .ugc-card:nth-child(4) { grid-column: auto; } .ugc-card:nth-child(4) .ugc-visual { aspect-ratio: 1.58 / 1; } .proof-card { min-height: 255px; }
   .about-layout { grid-template-columns: 1fr; gap: 10px; } .about-copy { padding-top: 35px; } .about-copy .about-lead { font-size: 1.2rem; }
